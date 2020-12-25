@@ -8,7 +8,7 @@
 // FLASH_512K, FLASH_1M, FLASH_2M, FLASH_4M, FLASH_8M, FLASH_16M.
 
 //#define FLASH_AUTOSIZE
-#define FLASH_4M
+#define FLASH_1M
 
 
 // The firmware now selects a baudrate of 115,200 by default, but the driver
@@ -19,7 +19,7 @@
 // unreliable, but 460800 seems to work well for most USB-serial devices.
 
 #define BIT_RATE_DEFAULT BIT_RATE_115200
-//#define BIT_RATE_AUTOBAUD
+//#define BIT_R/ATE_AUTOBAUD
 
 
 // At start-up firmware details like:
@@ -55,7 +55,7 @@
 // no performance loss.  However, you can define LUA_DWORD_ALIGNED_TVALUES and
 // this will force 16 byte TValues on FP builds.
 
-//#define LUA_NUMBER_INTEGRAL
+#define LUA_NUMBER_INTEGRAL
 //#define LUA_DWORD_ALIGNED_TVALUES
 
 
@@ -66,7 +66,7 @@
 // LUA_FLASH_STORE defines the default partition size if the NodeMCU partition
 // tool is not used.
 
-//#define LUA_FLASH_STORE                   0x10000
+#define LUA_FLASH_STORE                   0x10000
 
 // By default Lua executes the file init.lua at start up.  The following
 // define allows you to replace this with an alternative startup.  Warning:
